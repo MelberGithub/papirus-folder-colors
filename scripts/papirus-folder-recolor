@@ -552,10 +552,14 @@ echo "# $((waittime))%"
 
 ### check target and make new theme
 
+    if [ ! -d "$TARGET_NEW" ]; then
+        mkdir -p $TARGET_NEW
+    fi
+
     if [ "$TARGET_NEW" = "$HOME/.local/share/icons" -o "$TARGET_NEW" = "$HOME/.icons" ]; then
 
         if [ "$ICONSWITCH" = "classic" ]; then
-            cp -r -P /usr/share/icons/Papirus-mxblue$CLASSIC_DARK $TARGET_NEW/$PFR_NAME$DARKNAME
+            cp -r /usr/share/icons/Papirus-mxblue$CLASSIC_DARK $TARGET_NEW/$PFR_NAME$DARKNAME
             sed -i "s/Papirus-mxblue$CLASSIC_DARK/$PFR_NAME$DARKNAME/g" $TARGET_NEW/$PFR_NAME$DARKNAME/index.theme
             papirus-folder-editcolors
 
