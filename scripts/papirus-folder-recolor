@@ -2,7 +2,7 @@
 
 ### This app was developed by MX Devs 2023 and released under GPLv3
 ### Name=Papirus-folder-recolor
-### Version=25.06.01
+### Version=26.02.01
 
 TEXTDOMAINDIR=/usr/share/locale 
 export TEXTDOMAIN="papirus-folder-colors"
@@ -129,7 +129,7 @@ local C_CP="$2"
 local YAD_CP=(
 yad --title="$TITLE" --class=$CLASS --window-icon=$ICONPATH \
 --center --separator=" " \
---color --init-color="$C_CP"
+--color --picker --init-color="$C_CP"
 )
 
 C_CP=$("${YAD_CP[@]}")
@@ -253,7 +253,7 @@ yad --plug=$rkey --tabnum=2 \
 --field="$TEXT_FIELD_00":BTN '@bash -c "color_change 0 toggle >$fpipe"' \
 --field=" ":LBL " " \
 --field=" ":CLR "$COLOR_MAIN" \
---field="!color-select":BTN '@bash -c "color_picker 3 %3"' \
+--field="!color-select!":BTN '@bash -c "color_picker 3 %3"' \
 --field=" ":LBL " " \
 --field="$TEXT_FIELD0":LBL " " \
 --field="<b>$TEXT_FIELD1</b>":BTN '@bash -c "color_change 1 %3 >$fpipe"' \
@@ -557,6 +557,10 @@ echo "# $((waittime))%"
     fi
 
     if [ "$TARGET_NEW" = "$HOME/.local/share/icons" -o "$TARGET_NEW" = "$HOME/.icons" ]; then
+
+        if [ "$TARGET_NEW" = "$HOME/.local/share/icons" ] && [ ! -d "$TARGET_NEW" ]; then
+            mkdir -p "$TARGET_NEW"
+        fi
 
         if [ "$ICONSWITCH" = "classic" ]; then
             cp -r /usr/share/icons/Papirus-mxblue$CLASSIC_DARK $TARGET_NEW/$PFR_NAME$DARKNAME

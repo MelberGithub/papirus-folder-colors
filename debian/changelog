@@ -1,3 +1,21 @@
+papirus-folder-colors (26.03.01) mx; urgency=medium
+
+  * check for wayland session 
+
+ -- Melber <melber.mx.linux@gmail.com>  Sun, 08 Mar 2026 17:15:01 +0100
+ 
+papirus-folder-colors (26.02.01) mx; urgency=medium
+
+  * create directory ~/.local/share/icons if necessary 
+
+ -- Melber <melber.mx.linux@gmail.com>  Tue, 03 Feb 2026 23:10:01 +0100
+ 
+papirus-folder-colors (25.09.01) mx; urgency=medium
+
+  * yad 14 icon fixes
+
+ -- Melber <melber.mx.linux@gmail.com>  Sun, 21 Sep 2025 22:01:01 +0100
+
 papirus-folder-colors (25.06.01) mx; urgency=medium
 
   * add mxblue inherits
@@ -6,7 +24,7 @@ papirus-folder-colors (25.06.01) mx; urgency=medium
 
  -- Melber <melber.mx.linux@gmail.com>  Tue, 03 Jun 2025 23:55:01 +0100
  
- papirus-folder-colors (24.09.01) mx; urgency=medium
+papirus-folder-colors (24.09.01) mx; urgency=medium
 
   * update translations
   * include icon in hicolor theme (xfce4-settings-manager display issue)

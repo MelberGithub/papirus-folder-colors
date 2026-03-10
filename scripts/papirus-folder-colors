@@ -2,7 +2,7 @@
 
 ### This app was developed by MX Devs 2023 and released under GPLv3
 ### Name=Papirus-folder-colors
-VERSION=25.06.01
+VERSION=26.03.01
 
 TEXTDOMAINDIR=/usr/share/locale 
 export TEXTDOMAIN="papirus-folder-colors"
@@ -13,6 +13,18 @@ CLASS="papirus-folder-colors"
 ICONPATH="/usr/share/pixmaps/papirus-folder-colors.svg"
 BTN_CLOSE=$(gettext "Close"); BTN_CLOSE+='!window-close'
 
+#check for wayland
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+#TRANSLATORS warning message that tool doesn't work with wayland
+    wayland_text_1="$(gettext 'Sorry, this tool is not available when running a wayland session.')"
+
+    yad --title="$title" --class="$class" --window-icon="$iconpath" \
+    --borders=10 --center --width=300 --height=100 \
+    --text="\n$wayland_text_1\n" --text-align=center \
+    --button=yad-close \
+
+    exit
+fi
 
 ### check papirus icons are installed
 if [ ! -d /usr/share/icons/Papirus  -o  ! -d /usr/share/icons/Papirus-mxblue ]; then
@@ -142,11 +154,11 @@ export BTN_ABOUT=$(gettext "About")      ; BTN_ABOUT+='!help-about'
 #TRANSLATORS button label
 export BTN_CLOSE=$(gettext "Close")      ; BTN_CLOSE+='!window-close'
 #TRANSLATORS button to select function in main window
-export BTN_RECOLOR=$(gettext "Papirus Folder Recolor")    ; BTN_RECOLOR+='!/usr/share/pixmaps/papirus-folder-recolor.svg'
+export BTN_RECOLOR=$(gettext "Papirus Folder Recolor")    ; BTN_RECOLOR+='!/usr/share/pixmaps/papirus-folder-recolor.svg!'
 #TRANSLATORS button to select function in main window
-export BTN_THEMES=$(gettext "Papirus Folder Themes")    ; BTN_THEMES+='!/usr/share/pixmaps/papirus-folder-themes.svg'
+export BTN_THEMES=$(gettext "Papirus Folder Themes")    ; BTN_THEMES+='!/usr/share/pixmaps/papirus-folder-themes.svg!'
 #TRANSLATORS button to select function in main window
-export BTN_SETTINGS=$(gettext "Manage Folder Themes")    ; BTN_SETTINGS+='!/usr/share/pixmaps/papirus-folder-settings.svg'
+export BTN_SETTINGS=$(gettext "Manage Folder Themes")    ; BTN_SETTINGS+='!/usr/share/pixmaps/papirus-folder-settings.svg!'
 
 ### set some variables
 
@@ -173,7 +185,7 @@ until [ "$LAST_STOP" = "allaboard" ]; do
 yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --borders=10 --center --width=400 --height=500 --separator="_" \
 --text="\n<b>$TEXT_TOP</b>\n" --text-align=center \
---buttons-layout=spread --button="${BTN_ABOUT}":24 --button="${BTN_CLOSE}":22 \
+--buttons-layout=spread --button="${BTN_ABOUT}":24 --button="${BTN_CLOSE}":22 --keep-icon-size \
 --form --columns=1 --align=left \
 --field="$TEXT_1":LBL " " \
 --field="$BTN_RECOLOR":FBTN 'bash -c papirus-folder-recolor' \
