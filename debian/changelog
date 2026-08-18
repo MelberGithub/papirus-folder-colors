@@ -1,3 +1,12 @@
+papirus-folder-colors (26.03.02) mx; urgency=medium
+
+  * use blank templates for classic icon
+  * use tokens rather than actual colors
+  * use correct folder name when using dark mode
+  * update translations
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 05 Aug 2026 19:27:58 -0400
+
 papirus-folder-colors (26.03.01) mx; urgency=medium
 
   * check for wayland session 

@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Vinzenz Vietzke <vinz@vinzv.de>, 2024
+# Vinzenz Vietzke <vv@muibox.de>, 2024
 # fehlix, 2024
 # q a, 2024
 # anticapitalista <anticapitalista@riseup.net>, 2024

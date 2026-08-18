@@ -27,7 +27,7 @@ if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
 fi
 
 ### check papirus icons are installed
-if [ ! -d /usr/share/icons/Papirus  -o  ! -d /usr/share/icons/Papirus-mxblue ]; then
+if [ ! -d /usr/share/icons/Papirus ]; then
 #TRANSLATORS warning message if papirus icons are not installed line 1
     TEXT_NOPAPIRUS_1="$(gettext 'Papirus icon themes not found!')"
 #TRANSLATORS warning message if papirus icons are not installed line 2 - text is followed by required path
@@ -36,7 +36,7 @@ if [ ! -d /usr/share/icons/Papirus  -o  ! -d /usr/share/icons/Papirus-mxblue ]; 
 
     yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
     --borders=10 --center --width=300 --height=200 \
-    --text="\n\n<b>$TEXT_NOPAPIRUS_1</b>\n\n$TEXT_NOPAPIRUS_2\n<b>/usr/share/icons</b>" --text-align=center \
+    --text="\n\n<b>$TEXT_NOPAPIRUS_1</b>\n" --text-align=center \
     --button="${BTN_CLOSE}":6 \
     
     exit

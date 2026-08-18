@@ -5,7 +5,7 @@
 # 
 # Translators:
 # James Bowlin <BitJam@gmail.com>, 2024
-# Pál András Ciocan (Andris) <csokan.andras87@protonmail.ch>, 2024
+# b3a601cea954ec302ff861c4e4267715_658d0ac <5d11351aabbb363b7934638cd728c892_933757>, 2024
 # anticapitalista <anticapitalista@riseup.net>, 2024
 # 4b7bd6efadf10ad8d619f0732513f8d4_63f0d06 <6c82134afff501a5b58c68bd654d5ced_1121043>, 2024
 # Kempelen <antixhu@netengine.hu>, 2024

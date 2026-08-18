@@ -7,7 +7,7 @@
 # James Bowlin <BitJam@gmail.com>, 2024
 # En Kerro <inactive+ekeimaja@transifex.com>, 2024
 # Risto Pärkkä, 2024
-# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2024
+# Kimmo Kujansuu <mrkujansuu@gmail.com>, 2025
 # 
 #, fuzzy
 msgid ""
@@ -16,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 18:16+0100\n"
 "PO-Revision-Date: 2024-01-05 04:02+0000\n"
-"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>, 2024\n"
+"Last-Translator: Kimmo Kujansuu <mrkujansuu@gmail.com>, 2025\n"
 "Language-Team: Finnish (https://app.transifex.com/anticapitalista/teams/10162/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +27,7 @@ msgstr ""
 #. TRANSLATORS warning message if papirus icons are not installed line 1
 #: ../scripts/papirus-folder-colors:15
 msgid "Papirus icon themes not found!"
-msgstr "Papirus-kuvaketeemoja ei löydy!"
+msgstr "Papirus kuvakkeiden teemoja ei löydy!"
 
 #. TRANSLATORS warning message if papirus icons are not installed line 2 -
 #. text is followed by required path
@@ -36,8 +36,7 @@ msgid ""
 "This tool requires the Papirus and Papirus-mxblue icon themes to be "
 "installed in"
 msgstr ""
-"Tämä työkalu edellyttää, että Papirus- ja Papirus-mxblue-kuvaketeemat on "
-"asennettu"
+"Tämä työkalu edellyttää, että papirus ja papirus-mxblue on asennettuna"
 
 #. TRANSLATORS app name for titlebar text
 #. The desktop entry name will be shown within the menu
@@ -45,7 +44,7 @@ msgstr ""
 #: ../scripts/papirus-folder-colors:113 ../scripts/papirus-folder-colors:136
 #: ../xdg/papirus-folder-colors.desktop.in:5
 msgid "Papirus Folder Colors"
-msgstr "Papirus-kansion värit"
+msgstr "Papirus-värit"
 
 #. TRANSLATORS button label
 #: ../scripts/papirus-folder-colors:22 ../scripts/papirus-folder-colors:50
@@ -59,7 +58,7 @@ msgstr "Sulje"
 #. TRANSLATORS titlebar text
 #: ../scripts/papirus-folder-colors:39
 msgid "About Papirus Folder Colors"
-msgstr "Tietoja Papirus-kansion väreistä"
+msgstr "Tietoja Papirus-värit"
 
 #. TRANSLATORS button label
 #: ../scripts/papirus-folder-colors:46
@@ -79,7 +78,7 @@ msgstr "Versio"
 #. TRANSLATORS about window text
 #: ../scripts/papirus-folder-colors:59
 msgid "Tool to change folder colors of the Papirus icon theme"
-msgstr "Työkalu, jolla muuttaa Papirus-kuvaketeeman kansion värejä"
+msgstr "Työkalu Papirus-kuvaketeeman värien muuttamiseen"
 
 #. TRANSLATORS button label
 #: ../scripts/papirus-folder-colors:123 ../scripts/papirus-folder-recolor:14
@@ -91,18 +90,18 @@ msgstr "Tietoja"
 #: ../scripts/papirus-folder-colors:127 ../scripts/papirus-folder-recolor:27
 #: ../scripts/papirus-folder-recolor:136 ../scripts/papirus-folder-recolor:180
 msgid "Papirus Folder Recolor"
-msgstr "Papirus-kansion väritys"
+msgstr "Papirus kansion väritys"
 
 #. TRANSLATORS button to select function in main window
 #. TRANSLATORS app name for titlebar text
 #: ../scripts/papirus-folder-colors:129 ../scripts/papirus-folder-themes:25
 msgid "Papirus Folder Themes"
-msgstr "Papirus-kansioteemat"
+msgstr "Papirus teemat"
 
 #. TRANSLATORS button to select function in main window
 #: ../scripts/papirus-folder-colors:131
 msgid "Manage Folder Themes"
-msgstr "Hallitse kansioteemoja"
+msgstr "Hallitse teemoja"
 
 #. TRANSLATORS main window text line 1
 #: ../scripts/papirus-folder-colors:144
@@ -112,7 +111,7 @@ msgstr "Luo uusi kuvaketeema eri väreillä"
 #. TRANSLATORS main window text line 2
 #: ../scripts/papirus-folder-colors:146
 msgid "Select element colors directly"
-msgstr "Valitse elementin värit suoraan"
+msgstr "Valitse elementtien värit"
 
 #. TRANSLATORS main window text line 3
 #: ../scripts/papirus-folder-colors:148
@@ -128,7 +127,7 @@ msgstr "Hallitse tällä työkalulla luotuja teemoja"
 #: ../scripts/papirus-folder-editsettings:8
 #: ../scripts/papirus-folder-settings:14
 msgid "Papirus Folder Settings"
-msgstr "Papirus-kansion asetukset"
+msgstr "Papirus kansion asetukset"
 
 #. TRANSLATORS button label
 #: ../scripts/papirus-folder-editsettings:13
@@ -149,7 +148,7 @@ msgstr "OK"
 #. TRANSLATORS window text - asking for new location to save theme
 #: ../scripts/papirus-folder-editsettings:34
 msgid "New location for icon theme"
-msgstr "Uusi paikka kuvaketeemalla"
+msgstr "Kuvaketeeman uusi sijainti"
 
 #. TRANSLATORS error message - text is preceded by icon theme name and
 #. followed by path
@@ -195,13 +194,12 @@ msgstr "Valmista."
 #. to match button label, leave <b> markup tags
 #: ../scripts/papirus-folder-editsettings:244
 msgid "Use the <b> Reload List </b> button to update the folder list."
-msgstr ""
-"Käytä <b>Päivitä luettelo</b> painiketta, joka päivittää kansioluettelon."
+msgstr "Paina <b>Päivitä luettelo</b>, joka päivittää kansioluettelon."
 
 #. TRANSLATORS completed window error message
 #: ../scripts/papirus-folder-editsettings:254
 msgid "OOPS! Something went wrong with Papirus folder settings."
-msgstr "OHO! Jotain meni pieleen Papirus-kansion asetuksissa."
+msgstr "OHO! Jotain meni pieleen Papirus kansioasetuksissa."
 
 #. TRANSLATORS button label
 #: ../scripts/papirus-folder-recolor:18 ../scripts/papirus-folder-themes:18
@@ -383,7 +381,7 @@ msgstr "Valitse kansioteema"
 #. TRANSLATORS completed window error message
 #: ../scripts/papirus-folder-themes:321
 msgid "OOPS! Something went wrong with Papirus-folder-themes."
-msgstr "OHO! Jotain meni vikaan, Papirus-folder-themes."
+msgstr "OHO! Jotain meni vikaan, papirus-folder-themes."
 
 #. The desktop entry comment will be shown within the menu
 #: ../xdg/papirus-folder-colors.desktop.in:7

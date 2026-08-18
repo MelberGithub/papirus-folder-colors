@@ -6,7 +6,7 @@
 # Translators:
 # mahmut özcan <mahmutozcan@protonmail.com>, 2024
 # Caner Başaran <basaran.caner@gmail.com>, 2024
-# Mehmet Akif 9oglu, 2024
+# Mehmet Akif Dokuzoğlu, 2024
 # 
 #, fuzzy
 msgid ""
@@ -15,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-12 18:16+0100\n"
 "PO-Revision-Date: 2024-01-05 04:02+0000\n"
-"Last-Translator: Mehmet Akif 9oglu, 2024\n"
+"Last-Translator: Mehmet Akif Dokuzoğlu, 2024\n"
 "Language-Team: Turkish (https://app.transifex.com/anticapitalista/teams/10162/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
